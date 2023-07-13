@@ -28,7 +28,6 @@ requried_skills =
 
 st.sidebar.hearder('Input here')
 user_input = st.sidebar.text_input("Enter Register NO : ")
-df  = pd.read_excel("intern21.xlsx")
 
 
 
