@@ -17,8 +17,39 @@ required_skills = {"Cloud Computing":{
 
 st.sidebar.header('Input here')
 user_input = st.sidebar.text_input("Enter Register NO : ")
+df = pd.read_excel("intern21.xlsx")
+
+if user_input : 
+    user_input = int(user_input)
+    df = df[df["Reg_no"] == user_input]
+    def gap_analysis(Aspiration : str , data , required_skills): 
+        x , p = [] , 0
+        known_skills = known(data,required_skills)
+        for i in 
 
 
 
 
 
+        
+        
+        
+    def known(data , required_skills) : 
+        o = []
+        for i,j in requried_skills[data[Aspiration].to_list()[0]].items():
+            for k in data[i].to_list():
+                if "," in k :
+                    o += k.split(",")
+                else:
+                    o.append(k)
+        return o
+        
+
+
+
+
+
+
+
+
+        
