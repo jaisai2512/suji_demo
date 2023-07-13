@@ -15,7 +15,7 @@ required_skills = {"Cloud Computing":{
 }}
 
 
-st.sidebar.hearder('Input here')
+st.sidebar.header('Input here')
 user_input = st.sidebar.text_input("Enter Register NO : ")
 
 
