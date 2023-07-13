@@ -1,6 +1,6 @@
 
 import pandas as pd
-import streamlitv as st
+import streamlit as st
 import plotly.express as px
 
 required_skills = {"Cloud Computing":{
