@@ -47,8 +47,9 @@ weight , unknown  = gap_analysis(df,required_skills)
 weight1  = weight
 weight  = abs(100-weight)/10
 st.markdown("###Report")
-cols,col2 = st.columns(2)
+col1,col2 = st.columns(2)
 col1.matric('Name' , df['Name'][0])
+col2.matric("Gender" , df["Gender"][0])
 
 col3,col4 = st.colums(2)
 cols3.metric("Persentage", abs(weight1 - 100))
