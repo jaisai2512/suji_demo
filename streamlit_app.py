@@ -59,6 +59,8 @@ col4.metric("Gender" , df["Gender"][0])
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
+fig , ax = plt.subplots(figsize = (16,10))
+st.write(fig)
 
         
 
