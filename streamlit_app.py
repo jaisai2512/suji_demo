@@ -45,7 +45,7 @@ def known(data , required_skills) :
     for i,j in required_skills[data["Aspiration"].to_list()[0]].items():
         for k in data[i].to_list():
             if "," in k :
-                o += k.split(",")
+                o = o + k.split(",")
             else:
                 o.append(k)
     return o
