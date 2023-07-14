@@ -29,8 +29,8 @@ def gap_analysis( data , required_skills):
         for k,l in required_skills[data["Aspiration"].to_list()[0]][i].items():
             if k not in known_skills:
                 x.append(x)
-                #p = p + required_skills[data["Aspiration"].to_list()[0][i]]
-                
+                p = p + required_skills[data["Aspiration"].to_list()[0]][i][k]
+    return  p , x            
     
     
 def known(data , required_skills) : 
@@ -43,11 +43,14 @@ def known(data , required_skills) :
                 o.append(k)
     return o
 
-gap_analysis(df,required_skills)
+weight , unknown  = gap_analysis(df,required_skills)
+weight1  = weight
+weight  = abs(100-weight)/10
+st.mardown("###Report")
+
+
 
         
-
-st.write(required_skills[data["Aspiration"].to_list()[0]])
 
 
 
