@@ -49,6 +49,9 @@ def known(data , required_skills) :
             else:
                 o.append(k)
     return o
+
+gap_analysis("data",df,requried_skills)
+
         
 
 
