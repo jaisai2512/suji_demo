@@ -79,36 +79,36 @@ ax.plot(
 ax.set_yticks([])
 ax.set_ylabel("")
 
-    # Remove the outline box (spines) around the plot
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-    ax.spines['left'].set_visible(False)
-    
-    # Set the x-axis limits
-    ax.set_xlim(0,10)
-    
-    # Set labels and title
-    ax.set_xlabel('Where you Stand')
-    
-    # Load the Mario block image
-    mario_block_img = plt.imread('mario_block.png')  # Replace 'mario_block.png' with the actual path to the Mario block image
-    
-    # Plot the Mario block image at the desired position
-    mario_position = x_line[1]  # The position along the x-axis where the Mario block image will be placed
-    ax.imshow(mario_block_img, extent=[mario_position-0.40, mario_position + 0.90, -0.110, 0.99])
-    
-    # Add a legend
-    ax.legend()
-    
-    st.markdown('### Where I Stand')
-    
-    st.pyplot(fig)
-    
-    if(weight1==0):
-        st.write('Congralutions you have achieved your goal')
-    else:
-        weight2=abs(weight1-100)
-        st.write(f'You have completed {weight2} foot steps more {weight1} foot steps to reach goal')
+# Remove the outline box (spines) around the plot
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False)
+
+# Set the x-axis limits
+ax.set_xlim(0,10)
+
+# Set labels and title
+ax.set_xlabel('Where you Stand')
+
+# Load the Mario block image
+mario_block_img = plt.imread('mario_block.png')  # Replace 'mario_block.png' with the actual path to the Mario block image
+
+# Plot the Mario block image at the desired position
+mario_position = x_line[1]  # The position along the x-axis where the Mario block image will be placed
+ax.imshow(mario_block_img, extent=[mario_position-0.40, mario_position + 0.90, -0.110, 0.99])
+
+# Add a legend
+ax.legend()
+
+st.markdown('### Where I Stand')
+
+st.pyplot(fig)
+
+if(weight1==0):
+    st.write('Congralutions you have achieved your goal')
+else:
+    weight2=abs(weight1-100)
+    st.write(f'You have completed {weight2} foot steps more {weight1} foot steps to reach goal')
 
 
 
