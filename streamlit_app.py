@@ -50,7 +50,7 @@ def known(data , required_skills) :
                 o.append(k)
     return o
 
-gap_analysis(df,requried_skills)
+gap_analysis(df,required_skills)
 
         
 
