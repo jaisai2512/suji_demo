@@ -52,8 +52,8 @@ col1.metric('Name' , df['Name'][0])
 col2.metric("Gender" , df["Gender"][0])
 
 col3,col4 = st.columns(2)
-cols3.metric("Persentage", abs(weight1 - 100))
-cols4.metric("Gender" , df["Gender"][0])
+col3.metric("Persentage", abs(weight1 - 100))
+col4.metric("Gender" , df["Gender"][0])
 
 
 import matplotlib.pyplot as plt
