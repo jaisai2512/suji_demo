@@ -27,7 +27,7 @@ def gap_analysis( data , required_skills):
     known_skills = known(data,required_skills)
     for i in required_skills[data["Aspiration"].to_list()[0]] :
         print(i,"\n\n")
-        for k,l in required_skills[data["Aspiration"].to_list()[0][i]]:
+        for k,l in required_skills[data["Aspiration"].to_list()[0]][i].items():
             print(k,l)
 
 
