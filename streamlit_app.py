@@ -30,18 +30,7 @@ def gap_analysis( data , required_skills):
             if k not in known_skills:
                 x.append(x)
                 p = p + required_skills[data["Aspiration"].to_list()[0][i]]
-
-st.write(required_skills[data["Aspiration"].to_list()[0]])
-            
-
-
-
-
-
-
-
-
-    
+                
     
     
 def known(data , required_skills) : 
@@ -58,6 +47,7 @@ gap_analysis(df,required_skills)
 
         
 
+st.write(required_skills[data["Aspiration"].to_list()[0]])
 
 
 
