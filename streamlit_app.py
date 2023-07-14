@@ -60,8 +60,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
 st.write('Topics to cover')
-for i in unknown:
-    st.write(i)
+st.write(unknown)
 
 
 
