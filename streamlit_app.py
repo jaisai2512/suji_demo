@@ -25,7 +25,7 @@ df = df[df["Reg_no"] == user_input].reset_index()
 def gap_analysis( data , required_skills): 
     x , p = [] , 0
     known_skills = known(data,required_skills)
-    for i in requried_skills[data["Aspiration"].to_list()[0]] :
+    for i in required_skills[data["Aspiration"].to_list()[0]] :
         print(i,"\n\n")
         for k,l in required_skills[data["Aspiration"].to_list()[0][i]]:
             print(k,l)
