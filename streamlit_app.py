@@ -46,8 +46,17 @@ def known(data , required_skills) :
 weight , unknown  = gap_analysis(df,required_skills)
 weight1  = weight
 weight  = abs(100-weight)/10
-st.mardown("###Report")
+st.markdown("###Report")
+cols,col2 = st.columns(2)
+col1.matric('Name' , df['Name'][0])
 
+col3,col4 = st.colums(2)
+cols3.metric("Persentage", abs(weight1 - 100))
+cols4.metric("Gender" , df["Gender"][0])
+
+
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 
 
         
