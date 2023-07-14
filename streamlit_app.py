@@ -49,7 +49,7 @@ weight  = abs(100-weight)/10
 st.markdown("###Report")
 col1,col2 = st.columns(2)
 col1.metric('Name' , df['Name'][0])
-col2.metric("Gender" , df["Gender"][0])
+col2.metric("Roll NO" , df["Reg_no"][0])
 
 col3,col4 = st.columns(2)
 col3.metric("Persentage", abs(weight1 - 100))
