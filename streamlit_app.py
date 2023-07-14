@@ -22,7 +22,7 @@ df = pd.read_excel("intern21.xlsx")
 
 user_input = int(user_input)
 df = df[df["Reg_no"] == user_input].reset_index()
-def gap_analysis(Aspiration : str , data , required_skills): 
+def gap_analysis( data , required_skills): 
     x , p = [] , 0
     known_skills = known(data,required_skills)
     for i in requried_skills[data["Aspiration"].to_list()[0]] :
@@ -50,7 +50,7 @@ def known(data , required_skills) :
                 o.append(k)
     return o
 
-gap_analysis("data",df,requried_skills)
+gap_analysis(df,requried_skills)
 
         
 
